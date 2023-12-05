@@ -13,7 +13,8 @@ module.exports = class OS {
       endpoint: settings.endpoint || 'https://api.opensubtitles.com/api/v1',
       headers: {
         'Content-Type': 'application/json',
-        'Accept': '*/*'
+        'Accept': '*/*',
+        ...settings.headers
       }
     }
 
@@ -99,6 +100,11 @@ module.exports = class OS {
 
     // HEADERS Api-Key
     req.headers['Api-Key'] = this._settings.apikey
+
+    req.headers = {
+      ...req.headers,
+      ...this._settings.headers
+    }
 
     // JSON body
     if (req.method !== 'GET') {

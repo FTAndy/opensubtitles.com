@@ -1,10 +1,10 @@
 {
-    "name": "opensubtitles.com",
-    "version": "1.0.0",
+    "name": "opensubtitles-node-sdk",
+    "version": "1.0.2",
     "description": "opensubtitles.com api wrapper",
     "author": {
-        "name": "vankasteelj",
-        "email": "vankasteelj@gmail.com"
+        "name": "FTAndy",
+        "email": "fortheandy@gmail.com"
     },
     "main": "opensubtitles.js",
     "license": "MIT",
