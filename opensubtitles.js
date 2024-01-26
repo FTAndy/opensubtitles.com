@@ -93,10 +93,10 @@ module.exports = class OS {
     }
 
     // HEADERS Authorization
-    if (method.opts && method.opts.auth) {
-      if (!this._authentication.token && !params.token) throw Error('requires a bearer token, login first')
-      req.headers['Authorization'] = 'Bearer ' + (this._authentication.token || params.token)
-    }
+    // if (method.opts && method.opts.auth) {
+    //   if (!this._authentication.token && !params.token) throw Error('requires a bearer token, login first')
+    //   req.headers['Authorization'] = 'Bearer ' + (this._authentication.token || params.token)
+    // }
 
     // HEADERS Api-Key
     req.headers['Api-Key'] = this._settings.apikey
